@@ -6,8 +6,11 @@ class Game:
         self.money = 0
         self.mining_rate = 1
         self.upgrades = {
-            "mining_drone": {"cost": 10, "mining_rate_increase": 1},
-            "mining_station": {"cost": 50, "mining_rate_increase": 5}
+            "mining_drone": {"cost": 10, "mining_rate_increase": 0.1},
+            "mining_truck": {"cost": 500, "mining_rate_increase": 7},
+            "mining_rover": {"cost": 1000, "mining_rate_increase": 15},
+            "mining_station": {"cost": 5000, "mining_rate_increase": 100},
+            "mining_platform": {"cost": 10000, "mining_rate_increase": 250}
         }
         self.owned_upgrades = set()
         self.running = True
